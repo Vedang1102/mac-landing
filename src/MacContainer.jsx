@@ -25,7 +25,7 @@ const MacContainer = () => {
     })
 
   return (
-    <group position={[0, -10, 20]}>
+    <group position={[0, -6.2, 20]}>
       <primitive object={model.scene} />
     </group>
   )
