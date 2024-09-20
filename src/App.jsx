@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import './style.css'
-import { OrbitControls } from '@react-three/drei'
+import { Environment, OrbitControls } from '@react-three/drei'
 import MacContainer from './MacContainer'
 
 const App = () => {
@@ -9,6 +10,10 @@ const App = () => {
     <Canvas camera={{fov:20, position:[0, -2, 120]}}>
       <MacContainer />
       <OrbitControls />
+      <Environment
+      files={[
+        "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/studio_small_09_2k.hdr",
+      ]} />
     </Canvas>
   )
 }
